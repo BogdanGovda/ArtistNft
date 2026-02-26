@@ -1,0 +1,957 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artist NFT marketplace — explore and collect digital art NFTs">
+
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+    <!--  -->
+    <title>atristNFT</title>
+    <script type="module" crossorigin="" src="/ArtistNft/js/main2.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/ArtistNft/css/main2.css">
+    <link rel="stylesheet" crossorigin="" href="/ArtistNft/css/picture.css">
+  </head>
+  <body class="m-0 p-0 bg-[rgb(29,31,33)] 2xl:mx-[10%]">
+    <!-- <header class="header">
+      <div class="header__wrapper">
+        <div class="header__menu menu">
+          <div class="header__logo">
+            <svg>
+              <use href="#icons-logo"/>
+            </svg>
+          </div>
+          <a data-i18n="main" href="/index.html" class="menu__link" style="white-space: nowrap;">Main page</a>
+          <a href="" class="menu__link">
+            <svg>
+              <use href="#icons-lock"/>
+            </svg>
+            NFT
+          </a>
+          <a data-i18n="picture" href="/html/pages/galery.html" class="menu__link">Pictures</a>
+          <a data-i18n="auction" href="/html/pages/auction.html" class="menu__link">Auction</a>
+          <a data-i18n="pricing" href="/html/pages/product.html" class="menu__link">Pricing</a>
+          <a data-i18n="contact" href="/html/pages/custom.html" class="menu__link">Contacts</a>
+          <a data-i18n="blog" href="" class="menu__link">Blog</a>
+        </div>
+        <div class="header__btn">
+          <div class="lang">
+            <button class="btn btn__language" type="button">
+              <span class="lang__current">ENG</span>
+              <svg class="lang__icon">
+                <use href="#icons-arrow-down"></use>
+              </svg>
+            </button>
+    
+            <ul class="lang__list">
+              <li data-lang="en">ENG</li>
+              <li data-lang="uk">UA</li>
+            </ul>
+          </div>
+    
+          <button class="btn btn__authorization" type="button">
+            <span data-i18n="authorization" class="btn__text"> Authorization </span>
+          </button>
+          <button data-i18n="premium" class="btn btn__premiun" type="button">Premium access</button>
+        </div>
+        <div class="header__mobile">
+          <div class="header__premium">
+            <svg>
+              <use href="#icons-crown"/>
+            </svg>
+          </div>
+          <div class="burger">
+            <svg>
+              <use href="#icons-burger"/>
+            </svg>
+          </div>
+          <div class="burger-menu">
+            <div class="burger__close">
+              <svg>
+                <use href="#icons-close"/>
+              </svg>
+            </div>
+            <a data-i18n="main" href="" class="burger__link" style="white-space: nowrap;">Main page</a>
+            <a href="" class="burger__link">
+              <svg>
+                <use href="#icons-lock"/>
+              </svg>
+              NFT
+            </a>
+            <a data-i18n="picture" href="" class="burger__link">Pictures</a>
+            <a data-i18n="auction" href="" class="burger__link">Auction</a>
+            <a data-i18n="pricing" href="" class="burger__link">Pricing</a>
+            <a data-i18n="contact" href="" class="burger__link">Contacts</a>
+            <a data-i18n="blog" href="" class="burger__link">Blog</a>
+    
+            <button class="btn btn__authorization" type="button">
+              <span data-i18n="authorization" class="btn__text"> Authorization </span>
+            </button>
+            <button data-i18n="premium" class="btn btn__premiun" type="button">Premium access</button>
+          </div>
+        </div>
+      </div>
+    </header> -->
+    
+    <header class="w-full">
+      <div class="flex items-center justify-between px-[15px] mt-[20px] sm:px-[20px] xl:px-[165px] xl:pr-[150px] lg:mt-[11px] 
+              text-[14px] font-manrope leading-[19px] pb-[14px] lg:pb-[11px]
+    
+               ">
+        <div class="flex gap-[2px]">
+          
+          <div class="mr-[19px]">
+            <svg class="w-[145px] h-[30px] lg:ml-[-6px]">
+              <use href="#icons-logo"></use>
+            </svg>
+          </div>
+    
+          <a href="./index.html" class="hidden lg:flex items-center gap-2 px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)] whitespace-nowrap">
+            Main page
+          </a>
+    
+          <a href="./custom.html" class="hidden lg:flex items-center gap-2 px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]">
+            <svg class="w-[14px] h-[14px]">
+              <use href="#icons-lock"></use>
+            </svg>
+            NFT
+          </a>
+    
+          <a class="hidden lg:flex px-[12px] py-2 text-[14px]  leading-[19px] text-[rgb(200,210,220)]" href="./galery.html">
+            Pictures
+          </a>
+          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="./auction.html">
+            Auction
+          </a>
+          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="./product.html">
+            Pricing
+          </a>
+          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="./payment.html">
+            Contacts
+          </a>
+          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="./forum.html"> Blog </a>
+        </div>
+    
+          <div class="btn hidden lg:flex items-center gap-[8px]">
+            <div class="lang relative ">
+              <button type="button" class="btn__language flex items-center gap-2">
+                <span class="lang__current">ENG</span>
+                <svg class="lang__icon transition-transform duration-300">
+                  <use href="#icons-arrow-down"></use>
+                </svg>
+              </button>
+      
+              <ul class="lang__list absolute right-0 mt-2 min-w-[74px] text-center
+                    rounded-xl bg-[rgb(33,36,38)]
+                    opacity-0 invisible -translate-y-2
+                    transition-all duration-300 z-10
+                    text-grayLightText
+                    ">
+                <li data-lang="en">ENG</li>
+                <li data-lang="uk">UA</li>
+              </ul>
+            </div>
+      
+            <button type="button" class=" px-[11px] xl:px-[22px] lg:py-[12px] rounded-[12px] bg-neutral-800 text-sm   py-[14px] 
+            
+            ">
+              <span class=" bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                        bg-clip-text
+                        text-transparent
+                        text-[14px] leading-[20px]
+                               ">
+                Authorization
+              </span>
+            </button>
+      
+            <button type="button" class=" px-[11px] xl:px-[22px] py-[14px] lg:py-[12px]    rounded-[12px] 
+               bg-gradient-to-r from-blueWhite to-purpleWhite
+              text-sm
+              text-[14px] leading-[20px] font-bold font-proxima
+              whitespace-nowrap
+       ">
+              Premium access
+            </button>
+            
+          </div>
+          <div class="flex items-center gap-[10px] lg:hidden">
+          <div class="p-[7px] bg-grayLight rounded-[9px]">
+            <svg class="w-[18px] h-[18px]">
+              <use href="#icons-crown"></use>
+            </svg>
+          </div>      
+          
+          <button class="burger" type="button">
+            <svg class="w-6 h-6">
+              <use href="#icons-burger"></use>
+            </svg>
+          </button>
+         
+        </div>
+        </div>
+        
+      
+    
+      <div class="burger-menu fixed inset-0 flex flex-col items-center gap-5
+             bg-grayLight
+             hidden
+             opacity-0 invisible -translate-y-5
+             transition-all duration-500 ease-out
+             z-20
+               ">
+        <button type="button" class="burger__close ">
+          <svg class="w-[34px] h-[34px]">
+            <use href="#icons-close"></use>
+          </svg>
+        </button>
+    
+        <a class="text-[14px]" href="#">Main page</a>
+        <a class="flex items-center gap-2 text-[14px]" href="#">
+          <svg class="w-[18px] h-[18px]">
+            <use href="#icons-lock"></use>
+          </svg>
+          NFT
+        </a>
+    
+        <a class="tex-[14px]" href="#">Pictures</a>
+        <a class="text-[14px]" href="#">Auction</a>
+        <a class="text-[14px]" href="#">Pricing</a>
+    
+        <button type="button" class=" px-[11px] xl:px-[22px] lg:py-[12px] rounded-[12px] bg-neutral-800 text-sm   py-[14px] 
+            
+            ">
+              <span class=" bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                        bg-clip-text
+                        text-transparent
+                        text-[14px] leading-[20px]
+                               ">
+                Authorization
+              </span>
+            </button>
+        <button type="button" class=" px-[11px] xl:px-[22px] py-[14px] lg:py-[12px]    rounded-[12px] 
+               bg-gradient-to-r from-blueWhite to-purpleWhite
+              text-sm
+              text-[14px] leading-[20px] font-bold font-proxima
+              whitespace-nowrap
+       ">
+              Premium access
+            </button>
+      </div>
+    </header>
+    <section class="content relative overflow-x-hidden mb-[74px]">
+      <span class="font-proxima font-bold
+        text-[79px] leading-[96px]
+        opacity-50
+        text-transparent
+        [-webkit-text-stroke:1px_rgb(252,255,255)]
+        hidden md:inline absolute left-[-44px] top-[125px] md:top-[131px] md:left-[-33px] transform -translate-y-1/2  ">MAKE ART</span>
+      <span class=" font-proxima font-bold
+        text-[79px] leading-[96px]
+        opacity-50
+        text-transparent
+        [-webkit-text-stroke:1px_rgb(252,255,255)]
+        hidden md:inline absolute right-[-32px] top-[125px] md:top-[131px] md:right-[-24px] transform -translate-y-1/2   ">NOT WAR</span>
+      <div class="wrapper px-[15px] sm:px-[20px] xl:px-[165px]">
+        <div class="flex items-center justify-center flex-col max-md:mt-6 mt-15">
+          <h1 class="font-proxima
+                text-[34px] leading-[65px] font-bold
+                text-[rgb(252,255,255)]
+                md:text-[64px] max-md:leading-[40px]">
+            Art which inspire
+            <div class="hidden sm:block absolute top-[50px] left-1/4 2xl:left-1/3 2xl:-translate-x-1 -translate-x-1/2 z-[-1]">
+              <div class="absolute rounded-full
+            opacity-60 pointer-events-none
+            blur-[120px]"></div>
+    
+              <div class="absolute rounded-full
+            opacity-60 pointer-events-none
+            blur-[120px]
+            z-[-3]
+            w-[478.71px] h-[652.55px]
+            bg-light1"></div>
+    
+              <div class="absolute rounded-full
+            opacity-60 pointer-events-none
+            blur-[120px]
+            top-[133px] left-[110px]
+            z-[-2]
+            w-[323.78px] h-[440.01px]
+            bg-light2
+            rotate-[16.29deg]"></div>
+            </div>
+          </h1>
+          <p class="font-proxima font-normal
+                text-[15px] leading-[24px]
+                md:text-[16px] md:leading-[28px]
+                text-[rgb(252,255,255)]
+                text-center max-md:w-full w-[37%] mt-4">
+            Indulgence announcing uncommonly met she continuing two unpleasing terminated
+          </p>
+        </div>
+        <section class="galery mt-[50px]">
+          <div class="">
+            <div class="
+                  grid
+                  justify-center
+                  gap-x-7
+                  gap-y-6
+                  max-md:gap-y-4
+                  grid-cols-1
+                  md:grid-cols-2
+                  xl:grid-cols-[351px_351px_351px]
+                ">
+              <div class="h-[199px] md:h-[420px] xl:col-span-2 rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="h-[420px] rounded-2xl relative">
+                <div class="w-full h-full
+                    border border-grayLight
+                    rounded-[12px] flex items-center justify-center">
+                  <div class="absolute inset-0 blur-[22px] opacity-[0.17] z-1">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galerySmall.webp" alt="">
+                  </div>
+                  <div class=" px-[30px] pl-[40px] flex flex-col items-center">
+                    <div class="font-proxima font-bold
+                        text-[18px] leading-[26.5px]
+                        tracking-[2.1px] text-center 
+                        inline-block
+                        bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                        bg-clip-text
+                        text-transparent
+                        ">
+                      avalaible for premium
+                    </div>
+                    <div class="font-proxima font-bold
+                          text-[24px] leading-[33.5px]
+                          text-white
+                          flex items-center 
+                          gap-[22px] mt-[4px]">
+                      <svg class="lang__icon w-[27px] h-[33px]">
+                        <use href="#icons-lock-white"></use>
+                      </svg>
+                      CONTENT LOCKED
+                    </div>
+                    <div class="h-[64px]
+                          px-[18px] pt-[16px] pb-[18px] pl-[27px]
+                          rounded-[16px]
+                          bg-blackLigth z-1 mt-[24px] w-[134px]">
+                      <a href="#" class="flex items-center gap-2
+                          font-proxima font-bold
+                          text-[18px] leading-[26.5px] items-center gap-[10px] 
+                          bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                          bg-clip-text
+                          text-transparent">
+                        Unlock
+        
+                        <svg class="lang__icon w-[27px] h-[33px]">
+                          <use href="#icons-arrow-right-rgb"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="h-[412px] md:h-[420px] rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[412px] md:h-[420px] rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[412px] md:h-[420px] rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[412px] md:h-[420px] rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[199px] md:h-[420px] xl:col-span-2 rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[412px] md:h-[420px] rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[412px] md:h-[420px] rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[412px] md:h-[420px] rounded-2xl relative ">
+                <div class=" flex pt-[92px] px-[41px] justify-center relative h-full overflow-hidden rounded-[12px] group cursor-pointer">
+                  <div class="pointer-events-none absolute inset-[-40px] z-[1]
+                 bg-[linear-gradient(176.26deg,rgba(104,128,255,0.9)_3.296%,rgba(60,167,244,0.9)_52.346%,rgba(140,69,255,0.9)_92.15%)]
+                 blur-[60px]
+                 opacity-0 group-hover:opacity-100
+                 block"></div>
+        
+                  <div class="absolute inset-0 ">
+                    <img class="w-full h-full object-cover" src="/ArtistNft/img/picture/galetyBig.webp" alt="">
+                  </div>
+                  <div class="
+          z-2 flex flex-col items-center hidden
+                    group-hover:flex">
+                    <div class="font-['Proxima_Nova sans-serif'] text-[34px] leading-[49.5px] font-bold text-white text-center ">
+                      Title of picture
+                    </div>
+                    <div class="font-['Proxima_Nova sans-serif'] text-[14px] leading-[20px] font-normal text-white text-center  mt-[4px] ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
+                    </div>
+                    <div class="text-[26px] leading-[33.5px] font-bold text-white font-['Proxima_Nova sans-serif'] mt-[15px]">
+                      $100 322
+                    </div>
+                    <div class="card-blue__btn mt-[25px] flex gap-[12px] ">
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" ffont-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          Buy
+                        </a>
+                      </span>
+                      <span class="block rounded-[16px] bg-[#1D1F21] px-[40px] md:px-[45px] py-[18px]">
+                        <a href="#" class=" font-['Proxima_Nova sans-serif']   items-center gap-[10px] inline-flex
+                 bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent  text-[18px] leading-[26.5px] font-bold">
+                          View
+                          <svg class="lang__icon w-[27px] h-[33px]">
+                            <use href="#icons-arrow-right-rgb"></use>
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- <footer class="footer">
+      <div class="footer__wrapper footer-desck">
+        <div class="footer__info">
+          <div class="footer__text">
+            <div class="footer__logo">
+              <svg>
+                <use href="#icons-logo" />
+              </svg>
+            </div>
+            <div class="footer__link">Privacy policy</div>
+            <div class="footer__link">Terms of use</div>
+          </div>
+          <div class="footer__social">
+            <svg class="footer__social-icon">
+              <use href="#icons-inst"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use href="#icons-twitter"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use href="#icons-telegram"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use href="#icons-pinterest"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__undertext">All rights reserved © 2022</div>
+      </div>
+      <div class="footer-mobile">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <svg>
+              <use href="#icons-logo" />
+            </svg>
+          </div>
+          <div class="footer__social">
+            <svg class="footer__social-icon">
+              <use href="#icons-inst"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use href="#icons-twitter"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use href="#icons-telegram"></use>
+            </svg>
+            <svg class="footer__social-icon">
+              <use href="#icons-pinterest"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__link">Privacy policy</div>
+        <div class="footer__line"></div>
+        <div class="footer__link">Terms of use</div>
+        <div class="footer__undertext">All rights reserved © 2022</div>
+      </div>
+    </footer> -->
+    <footer class=" bg-[rgb(33,36,38)]
+                  tablet-mini:mt-0 mt-0
+                  
+                  ">
+      <div class="  hidden
+                px-[150px] pt-[18px]
+                tablet:px-[4%]
+                lg:block
+                
+                ">
+        <div class="flex items-center justify-between px-[8px] pr-[17px]
+                tablet-mini:px-[8px_5px
+                px-[8px_5px]">
+          <div class="flex items-center">
+            <div class="mr-[21px]">
+              <svg class="w-[145px] h-[30px]">
+                <use href="#icons-logo"></use>
+              </svg>
+            </div>
+            <div class="opacity-60 font-proxima text-[16px] leading-[21px]
+                font-normal text-[rgb(200,210,220)] mt-[4px]">
+              Privacy policy
+            </div>
+            <div class="opacity-60 font-proxima text-[16px] leading-[21px]
+                font-normal text-[rgb(200,210,220)]
+                ml-[30px]
+                tablet-mini:ml-0 
+                ml-0 mt-[4px] ">
+              Terms of use
+            </div>
+          </div>
+          <div class="flex gap-[21px] flex-wrap mt-[5px]">
+            <svg class="w-[20px] h-[20px]">
+              <use href="#icons-inst"></use>
+            </svg>
+            <svg class="w-[20px] h-[20px]">
+              <use href="#icons-twitter"></use>
+            </svg>
+            <svg class="w-[20px] h-[20px]">
+              <use href="#icons-telegram"></use>
+            </svg>
+            <svg class="w-[20px] h-[20px]">
+              <use href="#icons-pinterest"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="opacity-[0.05] border border-[rgb(252,255,255)]
+                mt-[20px] mb-[4px]
+                tablet-mini:mt-[12px] tablet-mini:mb-[17px]
+                mt-[12px] mb-[9px]"></div>
+        <div class="font-proxima text-[12px] leading-[20px] text-center
+                font-normal text-[rgb(200,210,220)] pb-[9px]
+               
+               ">
+          All rights reserved © 2022
+        </div>
+      </div>
+      <div class=" tablet-mini:block block lg:hidden
+                px-[15px] pt-[31px] pb-[25px ">
+        <div class="flex items-center justify-between px-[8px] 
+                tablet-mini:px-[8px_5px]
+                px-[8px_1px]">
+          <div class="mr-[21px]">
+            <svg class="w-[145px] h-[30px]">
+              <use href="#icons-logo"></use>
+            </svg>
+          </div>
+          <div class="flex gap-[18px] flex-wrap ">
+            <svg class="w-[24px] h-[24px]">
+              <use href="#icons-inst"></use>
+            </svg>
+            <svg class="w-[24px] h-[24px]">
+              <use href="#icons-twitter"></use>
+            </svg>
+            <svg class="w-[24px] h-[24px]">
+              <use href="#icons-telegram"></use>
+            </svg>
+            <svg class="w-[24px] h-[24px]">
+              <use href="#icons-pinterest"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="opacity-60 font-proxima text-[16px] leading-[21px]
+                font-normal text-[rgb(200,210,220)] mt-[30px]">
+          Privacy policy
+        </div>
+        <div class="opacity-[0.05] border border-[rgb(252,255,255)]
+                
+                tablet-mini:mt-[12px] tablet-mini:mb-[17px]
+                mt-[12px] mb-[17px]
+                
+                "></div>
+        <div class="opacity-60 font-proxima text-[16px] leading-[21px]
+                font-normal text-[rgb(200,210,220)]
+                
+                tablet-mini:ml-0 tablet-mini:mt-[27px]
+                ml-0 mt-[16px]">
+          Terms of use
+        </div>
+        <div class="font-proxima text-[12px] leading-[20px] text-center
+                font-normal text-[rgb(200,210,220)]
+                tablet-mini:mt-[19px] tablet-mini:py-[14px]
+                tablet-mini:text-[14px] tablet-mini:leading-[21px]
+                tablet-mini:bg-[rgb(29,31,33)]
+                mt-[19px] py-[14px]
+                text-[14px] leading-[21px]
+                bg-[rgb(29,31,33)]">
+          All rights reserved © 2022
+        </div>
+      </div>
+    </footer>
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+  
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;"><symbol id="icons-arrow-down" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="none"><rect transform="rotate(-90 9 9)"></rect><path fill="#c7d1db" d="M9 9.533 6.345 6.878a.75.75 0 1 0-1.057 1.065l3.18 3.18a.75.75 0 0 0 1.065 0l3.217-3.18a.75.75 0 0 0 .218-.533.75.75 0 0 0-.218-.532.75.75 0 0 0-1.057 0z"></path></symbol><symbol id="icons-arrow-down-rgb" viewBox="0 0 10.536 6.247" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1=".415" x2="5.492" y1="4.28" y2="4.532" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path fill="url(#a)" d="m2.416 5.246 3.54-3.54a1 1 0 1 0-1.42-1.41l-4.24 4.24a1 1 0 0 0 0 1.42l4.24 4.29a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29 1 1 0 0 0 0-1.41z" transform="rotate(-90 3.123 3.123)"></path></symbol><symbol id="icons-arrow-right-rgb" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1=".798" x2="10.502" y1="4.879" y2="5.69" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path d="M24 24H0V0h24z"></path><path fill="url(#a)" d="M10.995 5.004h-7.59l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1 1 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095l-3.3-3.29h7.59a1 1 0 1 0 0-2" transform="matrix(-1 0 0 -1 17.995 18.004)"></path></symbol><symbol id="icons-basket" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#1d1e21" d="M14 5h-2V4c0-2.2-1.8-4-4-4S4 1.8 4 4v1H2C.9 5 0 5.9 0 7v10c0 1.7 1.3 3 3 3h10c1.7 0 3-1.3 3-3V7c0-1.1-.9-2-2-2M6 4c0-1.1.9-2 2-2s2 .9 2 2v1H6z"></path></symbol><symbol id="icons-burger" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><rect></rect><path stroke="#fbfeff" stroke-linecap="round" stroke-width="1.5" d="M9 18h10M13 6h6M5 12h14"></path></symbol><symbol id="icons-camera" viewBox="0 0 15 10.5" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1=".998" x2="13.046" y1="4.266" y2="5.706" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path fill="url(#a)" d="M7.8 4.425c-.3-.9-1.2-1.5-2.1-1.5-.825 0-1.575.45-1.95 1.125-.225.375-.075.825.3 1.05s.825.075 1.05-.3.675-.45 1.05-.3.45.675.3 1.05a.79.79 0 0 1-.675.375c-.45 0-.75.3-.75.75v.75c0 .45.3.75.75.75s.75-.3.75-.75v-.15C7.575 6.9 8.25 5.625 7.8 4.425M5.625 9c-.45 0-.75.3-.75.75s.3.75.75.75.75-.3.75-.75-.3-.75-.75-.75m9-8.175a.68.68 0 0 0-.75 0l-2.625 1.35C11.175.975 10.2 0 9 0H2.25C.975 0 0 .975 0 2.25v4.5C0 8.025.975 9 2.25 9H3.9l.225-.45a1.84 1.84 0 0 1-.375-1.125v-.75c0-.15 0-.3.075-.45-.15-.075-.3-.075-.45-.15a1.85 1.85 0 0 1-.675-2.55c.675-1.05 1.8-1.725 3-1.725 1.425 0 2.7.9 3.15 2.25.3.825.225 1.8-.15 2.55-.3.6-.75 1.05-1.275 1.425-.075.225-.15.375-.3.6.075.075.15.225.225.375H9c1.2 0 2.175-.975 2.25-2.175l2.7 1.35c.375.15.825 0 .975-.3C15 7.725 15 7.65 15 7.5v-6a.9.9 0 0 0-.375-.675"></path></symbol><symbol id="icons-close" viewBox="0 0 38.184 38.184" xmlns="http://www.w3.org/2000/svg" fill="none"><g fill="#fff"><path d="m9.192 9.9.707-.708 19.092 19.092-.707.707z"></path><path d="M9.192 28.284 28.284 9.192l.707.708L9.9 28.99z"></path></g></symbol><symbol id="icons-crown" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1="2.498" x2="14.586" y1="7.875" y2="9.139" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path d="M0 0h18v18H0z"></path><path fill="url(#a)" d="M4.09 14.7a.3.3 0 0 0 .3.3h9.222a.3.3 0 0 0 .3-.3v-1.095H4.091zm12.282-9.597a.31.31 0 0 0-.36.012l-3.966 3.147-2.784-5.117c-.102-.195-.42-.192-.525 0L5.954 8.262 1.988 5.115a.3.3 0 0 0-.357-.012.3.3 0 0 0-.117.339l2.464 7.564h10.047l2.461-7.564a.3.3 0 0 0-.114-.339"></path></symbol><symbol id="icons-crown-black" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M0 0h24v24H0z"></path><path fill="#1d1e21" d="M5.454 19.6c0 .22.176.4.4.4H18.15a.4.4 0 0 0 .4-.4v-1.46H5.454zM21.83 6.805a.41.41 0 0 0-.48.016l-5.288 4.197-3.712-6.824c-.136-.26-.56-.255-.7 0l-3.712 6.824L2.65 6.82a.4.4 0 0 0-.476-.016.4.4 0 0 0-.156.451l3.286 10.086H18.7l3.282-10.086a.4.4 0 0 0-.152-.45"></path></symbol><symbol id="icons-crown-white" viewBox="0 0 37.5 30" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fbfeff" d="M6.477 29.251c0 .412.33.749.75.749H30.28c.412 0 .75-.337.75-.749v-2.739H6.477zM37.18 5.258a.77.77 0 0 0-.9.03l-9.914 7.868L19.406.362c-.255-.487-1.05-.479-1.312 0l-6.96 12.794-9.915-7.868a.744.744 0 0 0-.892-.03.75.75 0 0 0-.292.846l6.16 18.91h25.118l6.152-18.91a.76.76 0 0 0-.285-.846"></path></symbol><symbol id="icons-dislike" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M16 20H0V0h16z"></path><path fill="#52585f" d="M.148 3.417c1.066 2.733 2.846 6.6 4.426 10a280 280 0 0 1 2.167 4.766c.118.293.298.54.521.712s.48.263.742.263c.263 0 .52-.091.743-.263s.403-.419.52-.712a218 218 0 0 1 2.167-4.758c1.574-3.417 3.334-7.292 4.427-10a2.2 2.2 0 0 0 .147-.783 2.2 2.2 0 0 0-.106-.691 1.9 1.9 0 0 0-.31-.587 1.5 1.5 0 0 0-.466-.393 1.2 1.2 0 0 0-.552-.138H1.428a1.2 1.2 0 0 0-.548.14 1.5 1.5 0 0 0-.464.391 1.9 1.9 0 0 0-.308.583A2.2 2.2 0 0 0 0 2.633c0 .272.05.54.147.784"></path></symbol><symbol id="icons-enter" viewBox="0 0 12.846 16.667" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#c5ff97" d="M11.98 0a.833.833 0 0 0-.834.834v8.642a1.667 1.667 0 0 1-1.667 1.666H2.813L5.246 8.71a.833.833 0 0 0-1.142-1.208L.246 11.384a.833.833 0 0 0 0 1.183l3.858 3.859a.833.833 0 0 0 1.175-1.184L2.846 12.81h6.667a3.333 3.333 0 0 0 3.333-3.333V.834a.834.834 0 0 0-.867-.833"></path></symbol><symbol id="icons-inst" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1="3.33" x2="19.51" y1="10.125" y2="11.479" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path d="M0 0h24v24H0z"></path><path fill="url(#a)" d="M12 2c2.717 0 3.056.01 4.122.06s1.79.217 2.428.465c.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06s-3.056-.01-4.122-.06-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.772-1.153 4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12s.01-3.056.06-4.122.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2m0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10m6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6"></path></symbol><symbol id="icons-inst-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M0 0h24v24H0z"></path><path fill="#fbfeff" d="M12 2c2.717 0 3.056.01 4.122.06s1.79.217 2.428.465c.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06s-3.056-.01-4.122-.06-1.79-.218-2.428-.465a4.9 4.9 0 0 1-1.772-1.153 4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12s.01-3.056.06-4.122.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2m0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10m6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0M12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6"></path></symbol><symbol id="icons-like" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M0 0h16v20H0z"></path><path fill="#85a7ff" d="M15.852 16.583c-1.066-2.733-2.846-6.6-4.426-10a280 280 0 0 1-2.167-4.766 1.7 1.7 0 0 0-.521-.712 1.2 1.2 0 0 0-.742-.263c-.263 0-.52.091-.743.263a1.7 1.7 0 0 0-.52.712 218 218 0 0 1-2.167 4.758c-1.574 3.417-3.334 7.292-4.427 10a2.2 2.2 0 0 0-.147.783 2.2 2.2 0 0 0 .106.691c.07.22.176.419.31.587.133.168.291.302.466.393.175.09.362.138.552.138h13.146c.189-.001.375-.049.548-.14q.263-.139.464-.391c.132-.167.237-.365.308-.583a2.2 2.2 0 0 0-.04-1.47"></path></symbol><symbol id="icons-lock" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="none"><rect></rect><path fill="#c7d1db" d="M7 1.167a2.92 2.92 0 0 0-2.917 2.916V5.25H3.5c-.643 0-1.167.523-1.167 1.167v5.25c0 .643.524 1.166 1.167 1.166h7c.643 0 1.167-.523 1.167-1.166v-5.25c0-.644-.524-1.167-1.167-1.167h-.583V4.083A2.92 2.92 0 0 0 7 1.167M5.25 4.083c0-.965.785-1.75 1.75-1.75s1.75.785 1.75 1.75V5.25h-3.5zm5.251 7.584H7.583v-1.33A1.163 1.163 0 0 0 7 8.168c-.643 0-1.167.523-1.167 1.166 0 .43.237.802.584 1.005v1.329H3.5v-5.25h7z"></path></symbol><symbol id="icons-lock-white" viewBox="0 0 26.667 33.333" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#c7d1db" d="M21.667 11.667V8.333C21.667 3.667 18 0 13.333 0S5 3.667 5 8.333v3.334c-2.833 0-5 2.166-5 5v11.666c0 2.834 2.167 5 5 5h16.667c2.833 0 5-2.166 5-5V16.667c0-2.834-2.167-5-5-5M8.333 8.333c0-2.833 2.167-5 5-5s5 2.167 5 5v3.334h-10zM15.167 22.5l-.167.167V25c0 1-.667 1.667-1.667 1.667S11.667 26 11.667 25v-2.333c-1-1-1.167-2.5-.167-3.5S14 18 15 19c1 .833 1.167 2.5.167 3.5"></path></symbol><symbol id="icons-logo" viewBox="0 0 145 30" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1="4" x2="24.995" y1="12.5" y2="19.149" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#50eaff"></stop><stop offset="1" stop-color="#2a59ff"></stop></linearGradient></defs><path d="M0 0h145v30H0z"></path><path fill="url(#a)" fill-rule="evenodd" d="M7.413 13.127c-.031-.201-.466-7.506 5.27-9.437 4.092-1.379 1.03-4.82-2.139-3.318-4.35 2.064-4.308 5.773-3.131 12.755m-5.35-8.11c.543-1.426 1.502-1.715 2.407-1.555 1.103.197 1.328 1.529.99 2.597-1.467 4.64.533 8.865 2.06 10.61C3.538 15.49.883 8.116 2.063 5.018m6.712 24.78h5.289v-6.886h4.98q3.322 0 5.227-1.937.773-.798 1.233-1.748.674-1.392.674-3.11 0-1.824-.744-3.265-.447-.866-1.163-1.593-1.905-1.968-5.227-1.968H8.776v8.138c1.031.282 2.996.576 5.289.717v-4.243h4.273q1.077 0 1.753.584.707.585.707 1.63c0 .676-.512 1.7-.983 2.09a2.3 2.3 0 0 1-.77.433q0-.002-.002-.002l-.035.017-.021.007c-1.308.53-3.9.763-6.97.65-2.273-.094-4.577-.624-6.266-1.904-2.548-1.93-4.014-2.197-4.778-1.917-.649.238-.974 1.034-.972 1.725.004 1.11.986 2.665 4.718 3.88 1.275.415 2.658.721 4.057.943z"></path><path fill="#fff" fill-rule="evenodd" d="M77.809 23.796h-2.714v-6.281q0-1.026-.491-1.453-.492-.428-1.432-.428-1.43 0-2.35 1.218v6.944H68.11V9.546h2.713v5.277q.556-.663 1.496-1.133.055-.027.111-.052h.001q.918-.418 2.024-.418 1.625 0 2.457.812l.043.043q.104.104.196.219.659.823.659 2.174zm55.103.256q-1.432 0-2.18-.726-.747-.726-.747-2.094v-5.384h-1.71v-2.371h1.71v-2.82h2.734v2.82h2.094v2.371h-2.094v4.658q0 .49.257.812.257.32.683.32.642 0 .94-.299l.577 2.051q-.747.663-2.264.662m-93.834 0q-.889 0-1.63-.33-.88-.393-1.553-1.25v5.255h-2.713v-14.25h2.713v1.303q.62-.793 1.433-1.183.785-.377 1.75-.377 1.173 0 2.089.485.67.355 1.202.968.038.042.074.085 1.208 1.421 1.208 3.868 0 2.438-1.2 3.877l-.002.003-.08.094q-.533.613-1.202.968-.916.484-2.089.484m11.41 0q-2.393 0-3.953-1.495-.483-.463-.816-1.016-.744-1.234-.744-2.915 0-1.374.54-2.485.359-.738.956-1.361.59-.606 1.301-.976 1.12-.584 2.545-.584 1.427 0 2.52.605.673.373 1.219.976.245.267.448.563.983 1.432.983 3.54v.598h-7.67a2.62 2.62 0 0 0 .919 1.709q.11.095.229.177.737.507 1.822.507.684 0 1.474-.278.812-.278 1.282-.748l1.196 1.752q-.132.122-.273.233-1.515 1.198-3.978 1.198m11.766 0q-1.614 0-2.84-.69-.59-.333-1.09-.826-.51-.503-.85-1.101-.69-1.209-.69-2.81 0-1.552.66-2.738.348-.626.88-1.15.5-.493 1.09-.826 1.226-.69 2.84-.69 2.736 0 4.081 1.858l-1.773 1.666q-.318-.472-.76-.743-.596-.367-1.42-.367-1.238 0-2.03.833-.138.146-.251.31-.517.744-.517 1.848 0 1.345.769 2.179.3.316.664.512.596.321 1.365.321 1.39 0 2.18-1.11l1.773 1.644q-1.346 1.88-4.08 1.88m23.098 0q-2.393 0-3.952-1.495t-1.56-3.931q0-2.286 1.496-3.846 1.516-1.56 3.845-1.56 1.428 0 2.52.605.674.373 1.22.976 1.43 1.56 1.43 4.102v.599h-7.67a2.62 2.62 0 0 0 .92 1.709q.79.684 2.05.684.684 0 1.475-.278.81-.278 1.281-.748l1.197 1.752q-.132.121-.273.233-1.515 1.198-3.979 1.198m16.638-.256h-2.713v-6.239q0-.972-.486-1.452-.476-.47-1.416-.47-.706 0-1.275.279-.619.304-1.075.938v6.944h-2.713v-10.32h2.713v1.347q.525-.626 1.19-1.007 1.04-.596 2.42-.596 1.584 0 2.415.79l.001.002q.043.04.085.084.854.876.854 2.415zm17.07 0h-2.713v-1.068q-1.112 1.324-3.269 1.324-.607 0-1.161-.171-.714-.22-1.339-.726-1.09-.919-1.09-2.521 0-1.26.612-2.045.197-.252.457-.455 1.09-.833 2.521-.833 2.2 0 3.269 1.26v-1.388q0-.79-.62-1.26t-1.645-.47q-.641 0-1.229.175-.962.287-1.783 1.042l-1.026-1.816q1.838-1.624 4.508-1.624 1.987 0 3.248.919.228.166.415.37.845.924.845 2.621zm5.405 0h-2.714v-10.32h2.714v1.41a4.5 4.5 0 0 1 1.474-1.196q.898-.47 1.816-.47v2.65a3.5 3.5 0 0 0-.748-.064q-.683 0-1.453.341-.768.342-1.089.834zm15.922.256a7.9 7.9 0 0 1-2.585-.427q-1.218-.427-2.03-1.175l1.175-1.901q.598.556 1.624.982 1.026.428 1.944.428.855 0 1.282-.3.449-.299.449-.811 0-.385-.47-.62-.449-.256-1.132-.363a16 16 0 0 1-1.475-.32 10.5 10.5 0 0 1-1.474-.513 2.85 2.85 0 0 1-1.132-.94q-.449-.663-.449-1.624 0-1.368 1.132-2.308 1.133-.94 3.098-.94 2.393 0 4.167 1.41l-1.09 1.86q-.492-.515-1.325-.855a4.4 4.4 0 0 0-1.73-.342q-.727 0-1.175.299-.449.277-.449.726 0 .342.449.577.448.215 1.132.32.684.108 1.474.342a9 9 0 0 1 1.474.535q.154.067.296.153.489.3.837.83.448.682.448 1.666 0 1.452-1.196 2.393-1.175.918-3.269.918M52.86 17.664q-.064-.876-.705-1.58-.091-.105-.196-.194-.603-.512-1.641-.512-1.155 0-1.795.705a2.74 2.74 0 0 0-.748 1.581zm34.865 0q-.064-.876-.705-1.58-.62-.706-1.838-.706-1.154 0-1.794.705a2.74 2.74 0 0 0-.748 1.581zm-49.5 3.974q.71 0 1.247-.303.354-.2.633-.53.092-.106.173-.22.553-.784.553-1.96 0-1.12-.52-1.89-.094-.14-.206-.267-.28-.33-.633-.53-.538-.304-1.247-.304-.662 0-1.325.342t-1.004.834v3.653q.342.492 1.004.833.684.342 1.325.342m75.943.577q1.518 0 2.18-.897v-1.282q-.662-.898-2.18-.898-.833 0-1.388.428-.556.405-.556 1.132 0 .705.556 1.111.555.405 1.388.406m-6.876 1.303a1.66 1.66 0 0 1-1.218.513q-.705 0-1.218-.513a1.66 1.66 0 0 1-.513-1.218q0-.705.513-1.217.281-.281.62-.408.279-.105.598-.105.705 0 1.218.513.281.28.408.62.105.279.105.598t-.105.598q-.127.338-.408.62"></path></symbol><symbol id="icons-money" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#1d1e21" d="M6.75 0A6.757 6.757 0 0 0 0 6.75a6.757 6.757 0 0 0 6.75 6.75 6.757 6.757 0 0 0 6.75-6.75A6.757 6.757 0 0 0 6.75 0m2.12 8.812c-.203.297-.47.52-.82.686a2.6 2.6 0 0 1-.805.211v.908a.25.25 0 0 1-.25.25h-.75a.25.25 0 0 1-.25-.25V9.63a2.4 2.4 0 0 1-.418-.147 1.86 1.86 0 0 1-.888-.736 2.05 2.05 0 0 1-.344-1.102.25.25 0 0 1 .233-.26l.673-.046a.25.25 0 0 1 .265.22c.027.226.09.412.184.539a.9.9 0 0 0 .443.344c.43.19.979.19 1.358.045a.9.9 0 0 0 .367-.257.54.54 0 0 0 .1-.32.43.43 0 0 0-.1-.29c-.037-.049-.133-.141-.385-.242a14 14 0 0 0-.928-.25c-.568-.14-.897-.248-1.1-.359-.304-.16-.532-.36-.675-.593a1.5 1.5 0 0 1-.22-.804c0-.322.09-.63.267-.912a1.74 1.74 0 0 1 .787-.634q.166-.076.382-.126v-.835a.25.25 0 0 1 .25-.25h.749a.25.25 0 0 1 .25.25v.79q.338.057.623.17a1.87 1.87 0 0 1 1.135 1.657.25.25 0 0 1-.233.263l-.688.046a.25.25 0 0 1-.265-.216q-.057-.421-.289-.602c-.177-.151-.434-.221-.793-.221-.351 0-.634.068-.795.192a.45.45 0 0 0-.193.383q0 .185.115.287c.04.032.26.175.97.324.587.139 1.019.265 1.255.367q.566.256.804.65.265.396.265.893c0 .347-.096.671-.285.963"></path></symbol><symbol id="icons-pinterest" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1="5.237" x2="17.888" y1="10.2" y2="11.06" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path d="M0 0h24v24H0z"></path><path fill="url(#a)" d="M12.24 2.4C6.96 2.4 4.2 5.76 4.2 9.48c0 1.8.96 3.6 2.52 4.56.48.24.36 0 .72-1.44 0-.12 0-.24-.12-.36-2.16-2.64-.36-7.8 4.68-7.8 7.32 0 5.88 10.08 1.32 10.08-.96.12-1.8-.6-1.8-1.56v-.48c.48-1.32.84-2.52.96-3.84 0-2.52-3.72-2.16-3.72 1.2 0 .6.12 1.2.36 1.68 0 0-1.2 4.92-1.44 5.76-.24 1.44-.12 2.88.12 4.2-.12.12 0 .12 0 .12h.12c.84-1.2 1.56-2.4 2.04-3.72.12-.6.72-2.76.72-2.76.6.84 1.68 1.32 2.76 1.32 3.72 0 6.36-3.24 6.36-7.2S16.44 2.4 12.24 2.4"></path></symbol><symbol id="icons-pinterest-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M0 0h24v24H0z"></path><path fill="#fbfeff" d="M12.24 2.4C6.96 2.4 4.2 5.76 4.2 9.48c0 1.8.96 3.6 2.52 4.56.48.24.36 0 .72-1.44 0-.12 0-.24-.12-.36-2.16-2.64-.36-7.8 4.68-7.8 7.32 0 5.88 10.08 1.32 10.08-.96.12-1.8-.6-1.8-1.56v-.48c.48-1.32.84-2.52.96-3.84 0-2.52-3.72-2.16-3.72 1.2 0 .6.12 1.2.36 1.68 0 0-1.2 4.92-1.44 5.76-.24 1.44-.12 2.88.12 4.2-.12.12 0 .12 0 .12h.12c.84-1.2 1.56-2.4 2.04-3.72.12-.6.72-2.76.72-2.76.6.84 1.68 1.32 2.76 1.32 3.72 0 6.36-3.24 6.36-7.2S16.44 2.4 12.24 2.4"></path></symbol><symbol id="icons-serch" viewBox="0 0 18.707 18.708" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fbfeff" d="M8 16a7.95 7.95 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.95 7.95 0 0 0 16 8c0-4.411-3.589-8-8-8S0 3.589 0 8s3.589 8 8 8M8 2c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6"></path></symbol><symbol id="icons-stars-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M0 0h20v20H0z"></path><path fill="#fbfeff" d="M14.634 17.5a.8.8 0 0 1-.384-.092L10 15.183l-4.25 2.225a.833.833 0 0 1-1.208-.883l.833-4.692L1.942 8.5a.83.83 0 0 1-.208-.833.83.83 0 0 1 .675-.567l4.75-.692L9.25 2.133a.833.833 0 0 1 1.5 0L12.867 6.4l4.75.692a.83.83 0 0 1 .675.566.83.83 0 0 1-.208.834l-3.434 3.333.834 4.692a.83.83 0 0 1-.334.833.83.83 0 0 1-.516.15"></path></symbol><symbol id="icons-telegram" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1="3.331" x2="19.477" y1="10.426" y2="12.037" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path d="M0 0h24v24H0z"></path><path fill="url(#a)" d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"></path></symbol><symbol id="icons-telegram-white" viewBox="0 0 20.016 16.786" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#fbfeff" d="M18.665.11.935 6.947C-.275 7.433-.268 8.108.713 8.41l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701H7.84l.002.001-.314 4.692c.46 0 .663-.21.92-.46l2.212-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"></path></symbol><symbol id="icons-twitter" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><defs><linearGradient id="a" x1="2.897" x2="19.826" y1="10.698" y2="12.441" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#68c8ff"></stop><stop offset=".995" stop-color="#d0b4ff"></stop></linearGradient></defs><path d="M0 0h24v24H0z"></path><path fill="url(#a)" d="m22.5 6-2.25.375 1.5-1.875-2.625.75C15.75 1.5 10.5 5.625 12 9 6 9 3 4.5 3 4.5s-2.25 3.375 1.5 6l-2.25-.75c0 2.25 1.5 3.75 4.125 4.5H3.75c1.5 3 4.125 3 4.125 3s-2.25 1.875-6.375 1.875c12.375 6 19.875-5.25 18.75-11.25z"></path></symbol><symbol id="icons-twitter-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path d="M0 0h24v24H0z"></path><path fill="#fbfeff" d="m22.5 6-2.25.375 1.5-1.875-2.625.75C15.75 1.5 10.5 5.625 12 9 6 9 3 4.5 3 4.5s-2.25 3.375 1.5 6l-2.25-.75c0 2.25 1.5 3.75 4.125 4.5H3.75c1.5 3 4.125 3 4.125 3s-2.25 1.875-6.375 1.875c12.375 6 19.875-5.25 18.75-11.25z"></path></symbol></svg></body></html>
