@@ -9,626 +9,455 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
     <!--  -->
     <title>atristNFT</title>
-    <script type="module" crossorigin="" src="/ArtistNft/js/index.js"></script>
+    <script type="module" crossorigin="" src="/ArtistNft/js/payment.js"></script>
     <link rel="modulepreload" crossorigin="" href="/ArtistNft/js/main.js">
     <link rel="stylesheet" crossorigin="" href="/ArtistNft/css/main.css">
-    <link rel="stylesheet" crossorigin="" href="/ArtistNft/css/index.css">
+    <link rel="stylesheet" crossorigin="" href="/ArtistNft/css/picture.css">
   </head>
-  <body>
-    <!-- <header class="header">
-      <div class="header__wrapper">
-        <div class="header__menu menu">
-          <div class="header__logo">
-            <svg>
-              <use href="#icons-logo"/>
-            </svg>
-          </div>
-          <a data-i18n="main" href="/index.html" class="menu__link" style="white-space: nowrap;">Main page</a>
-          <a href="" class="menu__link">
-            <svg>
-              <use href="#icons-lock"/>
-            </svg>
-            NFT
-          </a>
-          <a data-i18n="picture" href="/html/pages/galery.html" class="menu__link">Pictures</a>
-          <a data-i18n="auction" href="/html/pages/auction.html" class="menu__link">Auction</a>
-          <a data-i18n="pricing" href="/html/pages/product.html" class="menu__link">Pricing</a>
-          <a data-i18n="contact" href="/html/pages/custom.html" class="menu__link">Contacts</a>
-          <a data-i18n="blog" href="" class="menu__link">Blog</a>
-        </div>
-        <div class="header__btn">
-          <div class="lang">
-            <button class="btn btn__language" type="button">
-              <span class="lang__current">ENG</span>
-              <svg class="lang__icon">
-                <use href="#icons-arrow-down"></use>
-              </svg>
-            </button>
-    
-            <ul class="lang__list">
-              <li data-lang="en">ENG</li>
-              <li data-lang="uk">UA</li>
-            </ul>
-          </div>
-    
-          <button class="btn btn__authorization" type="button">
-            <span data-i18n="authorization" class="btn__text"> Authorization </span>
-          </button>
-          <button data-i18n="premium" class="btn btn__premiun" type="button">Premium access</button>
-        </div>
-        <div class="header__mobile">
-          <div class="header__premium">
-            <svg>
-              <use href="#icons-crown"/>
-            </svg>
-          </div>
-          <div class="burger">
-            <svg>
-              <use href="#icons-burger"/>
-            </svg>
-          </div>
-          <div class="burger-menu">
-            <div class="burger__close">
+  <body class="m-0 p-0 bg-[rgb(29,31,33)] 2xl:px-[10%] min-h-screen flex flex-col">
+    <main class="flex-1 mb-[37px]">
+      <!-- <header class="header">
+        <div class="header__wrapper">
+          <div class="header__menu menu">
+            <div class="header__logo">
               <svg>
-                <use href="#icons-close"/>
+                <use href="#icons-logo"/>
               </svg>
             </div>
-            <a data-i18n="main" href="" class="burger__link" style="white-space: nowrap;">Main page</a>
-            <a href="" class="burger__link">
+            <a data-i18n="main" href="/index.html" class="menu__link" style="white-space: nowrap;">Main page</a>
+            <a href="" class="menu__link">
               <svg>
                 <use href="#icons-lock"/>
               </svg>
               NFT
             </a>
-            <a data-i18n="picture" href="" class="burger__link">Pictures</a>
-            <a data-i18n="auction" href="" class="burger__link">Auction</a>
-            <a data-i18n="pricing" href="" class="burger__link">Pricing</a>
-            <a data-i18n="contact" href="" class="burger__link">Contacts</a>
-            <a data-i18n="blog" href="" class="burger__link">Blog</a>
-    
-            <button class="btn btn__authorization" type="button">
-              <span data-i18n="authorization" class="btn__text"> Authorization </span>
-            </button>
-            <button data-i18n="premium" class="btn btn__premiun" type="button">Premium access</button>
+            <a data-i18n="picture" href="/html/pages/galery.html" class="menu__link">Pictures</a>
+            <a data-i18n="auction" href="/html/pages/auction.html" class="menu__link">Auction</a>
+            <a data-i18n="pricing" href="/html/pages/product.html" class="menu__link">Pricing</a>
+            <a data-i18n="contact" href="/html/pages/custom.html" class="menu__link">Contacts</a>
+            <a data-i18n="blog" href="" class="menu__link">Blog</a>
           </div>
-        </div>
-      </div>
-    </header> -->
-    
-    <header class="w-full">
-      <div class="flex items-center justify-between px-[15px] mt-[20px] sm:px-[20px] xl:px-[165px] xl:pr-[150px] lg:mt-[11px] 
-              text-[14px] font-manrope leading-[19px] pb-[14px] lg:pb-[11px]
-    
-               ">
-        <div class="flex gap-[2px]">
-          
-          <div class="mr-[19px]">
-            <svg class="w-[145px] h-[30px] lg:ml-[-6px]">
-              <use href="#icons-logo"></use>
-            </svg>
-          </div>
-    
-          <a href="index.html" class="hidden lg:flex items-center gap-2 px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)] whitespace-nowrap">
-            Main page
-          </a>
-    
-          <a href="custom.html" class="hidden lg:flex items-center gap-2 px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]">
-            <svg class="w-[14px] h-[14px]">
-              <use href="#icons-lock"></use>
-            </svg>
-            NFT
-          </a>
-    
-          <a class="hidden lg:flex px-[12px] py-2 text-[14px]  leading-[19px] text-[rgb(200,210,220)]" href="galery.html">
-            Pictures
-          </a>
-          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="auction.html">
-            Auction
-          </a>
-          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="product.html">
-            Pricing
-          </a>
-          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="payment.html">
-            Contacts
-          </a>
-          <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="forum.html"> Blog </a>
-        </div>
-    
-          <div class="btn hidden lg:flex items-center gap-[8px]">
-            <div class="lang relative ">
-              <button type="button" class="btn__language flex items-center gap-2">
+          <div class="header__btn">
+            <div class="lang">
+              <button class="btn btn__language" type="button">
                 <span class="lang__current">ENG</span>
-                <svg class="lang__icon transition-transform duration-300">
+                <svg class="lang__icon">
                   <use href="#icons-arrow-down"></use>
                 </svg>
               </button>
       
-              <ul class="lang__list absolute right-0 mt-2 min-w-[74px] text-center
-                    rounded-xl bg-[rgb(33,36,38)]
-                    opacity-0 invisible -translate-y-2
-                    transition-all duration-300 z-10
-                    text-grayLightText
-                    ">
+              <ul class="lang__list">
                 <li data-lang="en">ENG</li>
                 <li data-lang="uk">UA</li>
               </ul>
             </div>
       
-            <button type="button" class=" px-[11px] xl:px-[22px] lg:py-[12px] rounded-[12px] bg-neutral-800 text-sm   py-[14px] 
-            
-            ">
-              <span class=" bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
-                        bg-clip-text
-                        text-transparent
-                        text-[14px] leading-[20px]
-                               ">
-                Authorization
-              </span>
+            <button class="btn btn__authorization" type="button">
+              <span data-i18n="authorization" class="btn__text"> Authorization </span>
             </button>
-      
-            <button type="button" class=" px-[11px] xl:px-[22px] py-[14px] lg:py-[12px]    rounded-[12px] 
-               bg-gradient-to-r from-blueWhite to-purpleWhite
-              text-sm
-              text-[14px] leading-[20px] font-bold font-proxima
-              whitespace-nowrap
-       ">
-              Premium access
-            </button>
-            
+            <button data-i18n="premium" class="btn btn__premiun" type="button">Premium access</button>
           </div>
-          <div class="flex items-center gap-[10px] lg:hidden">
-          <div class="p-[7px] bg-grayLight rounded-[9px]">
-            <svg class="w-[18px] h-[18px]">
-              <use href="#icons-crown"></use>
-            </svg>
-          </div>      
+          <div class="header__mobile">
+            <div class="header__premium">
+              <svg>
+                <use href="#icons-crown"/>
+              </svg>
+            </div>
+            <div class="burger">
+              <svg>
+                <use href="#icons-burger"/>
+              </svg>
+            </div>
+            <div class="burger-menu">
+              <div class="burger__close">
+                <svg>
+                  <use href="#icons-close"/>
+                </svg>
+              </div>
+              <a data-i18n="main" href="" class="burger__link" style="white-space: nowrap;">Main page</a>
+              <a href="" class="burger__link">
+                <svg>
+                  <use href="#icons-lock"/>
+                </svg>
+                NFT
+              </a>
+              <a data-i18n="picture" href="" class="burger__link">Pictures</a>
+              <a data-i18n="auction" href="" class="burger__link">Auction</a>
+              <a data-i18n="pricing" href="" class="burger__link">Pricing</a>
+              <a data-i18n="contact" href="" class="burger__link">Contacts</a>
+              <a data-i18n="blog" href="" class="burger__link">Blog</a>
+      
+              <button class="btn btn__authorization" type="button">
+                <span data-i18n="authorization" class="btn__text"> Authorization </span>
+              </button>
+              <button data-i18n="premium" class="btn btn__premiun" type="button">Premium access</button>
+            </div>
+          </div>
+        </div>
+      </header> -->
+      
+      <header class="w-full">
+        <div class="flex items-center justify-between px-[15px] mt-[20px] sm:px-[20px] xl:px-[165px] xl:pr-[150px] lg:mt-[11px] 
+                text-[14px] font-manrope leading-[19px] pb-[14px] lg:pb-[11px]
+      
+                 ">
+          <div class="flex gap-[2px]">
+            
+            <div class="mr-[19px]">
+              <svg class="w-[145px] h-[30px] lg:ml-[-6px]">
+                <use href="#icons-logo"></use>
+              </svg>
+            </div>
+      
+            <a href="index.html" class="hidden lg:flex items-center gap-2 px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)] whitespace-nowrap">
+              Main page
+            </a>
+      
+            <a href="custom.html" class="hidden lg:flex items-center gap-2 px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]">
+              <svg class="w-[14px] h-[14px]">
+                <use href="#icons-lock"></use>
+              </svg>
+              NFT
+            </a>
+      
+            <a class="hidden lg:flex px-[12px] py-2 text-[14px]  leading-[19px] text-[rgb(200,210,220)]" href="galery.html">
+              Pictures
+            </a>
+            <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="auction.html">
+              Auction
+            </a>
+            <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="product.html">
+              Pricing
+            </a>
+            <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="payment.html">
+              Contacts
+            </a>
+            <a class="hidden lg:flex px-[12px] py-2 text-[14px] leading-[19px] text-[rgb(200,210,220)]" href="forum.html"> Blog </a>
+          </div>
+      
+            <div class="btn hidden lg:flex items-center gap-[8px]">
+              <div class="lang relative ">
+                <button type="button" class="btn__language flex items-center gap-2">
+                  <span class="lang__current">ENG</span>
+                  <svg class="lang__icon transition-transform duration-300">
+                    <use href="#icons-arrow-down"></use>
+                  </svg>
+                </button>
+        
+                <ul class="lang__list absolute right-0 mt-2 min-w-[74px] text-center
+                      rounded-xl bg-[rgb(33,36,38)]
+                      opacity-0 invisible -translate-y-2
+                      transition-all duration-300 z-10
+                      text-grayLightText
+                      ">
+                  <li data-lang="en">ENG</li>
+                  <li data-lang="uk">UA</li>
+                </ul>
+              </div>
+        
+              <button type="button" class=" px-[11px] xl:px-[22px] lg:py-[12px] rounded-[12px] bg-neutral-800 text-sm   py-[14px] 
+              
+              ">
+                <span class=" bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                          bg-clip-text
+                          text-transparent
+                          text-[14px] leading-[20px]
+                                 ">
+                  Authorization
+                </span>
+              </button>
+        
+              <button type="button" class=" px-[11px] xl:px-[22px] py-[14px] lg:py-[12px]    rounded-[12px] 
+                 bg-gradient-to-r from-blueWhite to-purpleWhite
+                text-sm
+                text-[14px] leading-[20px] font-bold font-proxima
+                whitespace-nowrap
+         ">
+                Premium access
+              </button>
+              
+            </div>
+            <div class="flex items-center gap-[10px] lg:hidden">
+            <div class="p-[7px] bg-grayLight rounded-[9px]">
+              <svg class="w-[18px] h-[18px]">
+                <use href="#icons-crown"></use>
+              </svg>
+            </div>      
+            
+            <button class="burger" type="button">
+              <svg class="w-6 h-6">
+                <use href="#icons-burger"></use>
+              </svg>
+            </button>
+           
+          </div>
+          </div>
           
-          <button class="burger" type="button">
-            <svg class="w-6 h-6">
-              <use href="#icons-burger"></use>
-            </svg>
-          </button>
-         
-        </div>
-        </div>
         
       
-    
-      <div class="burger-menu fixed inset-0 flex flex-col items-center gap-5
-             bg-grayLight
-             hidden
-             opacity-0 invisible -translate-y-5
-             transition-all duration-500 ease-out
-             z-20
+        <div class="burger-menu fixed inset-0 flex flex-col items-center gap-5
+               bg-grayLight
+               hidden
+               opacity-0 invisible -translate-y-5
+               transition-all duration-500 ease-out
+               z-20
+                 ">
+          <button type="button" class="burger__close ">
+            <svg class="w-[34px] h-[34px]">
+              <use href="#icons-close"></use>
+            </svg>
+          </button>
+      
+          <a class="text-[14px]" href="#">Main page</a>
+          <a class="flex items-center gap-2 text-[14px]" href="#">
+            <svg class="w-[18px] h-[18px]">
+              <use href="#icons-lock"></use>
+            </svg>
+            NFT
+          </a>
+      
+          <a class="tex-[14px]" href="#">Pictures</a>
+          <a class="text-[14px]" href="#">Auction</a>
+          <a class="text-[14px]" href="#">Pricing</a>
+      
+          <button type="button" class=" px-[11px] xl:px-[22px] lg:py-[12px] rounded-[12px] bg-neutral-800 text-sm   py-[14px] 
+              
+              ">
+                <span class=" bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                          bg-clip-text
+                          text-transparent
+                          text-[14px] leading-[20px]
+                                 ">
+                  Authorization
+                </span>
+              </button>
+          <button type="button" class=" px-[11px] xl:px-[22px] py-[14px] lg:py-[12px]    rounded-[12px] 
+                 bg-gradient-to-r from-blueWhite to-purpleWhite
+                text-sm
+                text-[14px] leading-[20px] font-bold font-proxima
+                whitespace-nowrap
+         ">
+                Premium access
+              </button>
+        </div>
+      </header>
+      <section class="wrapper px-[15px] mt-[32px] pb-[15px] 
+      sm:px-[20px] xl:px-[165px]  lg:mt-[33px] lg:pb-[20px]
+      
+      ">
+       <div>
+         
+         <div class="wrap flex justify-center flex-wrap md:justify-between gap-[40px]">
+           <div class="content  ">
+            <div class="pretitle bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                 bg-clip-text
+                 text-transparent
+                 font-proxima
+                 font-bold
+                 text-[14px]
+                 leading-[26px]
+                 tracking-[0.1em]
+                lg:text-[18px]
+                 ">
+           PURCHASE
+         </div>
+         <div class="font-proxima font-bold
+                 text-[26px] leading-[34px]
+                 text-white
+                 lg:text-[36px]
+                 lg:mt-[10px]
+                 break-words">
+           Payment for
+           <span class="bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                       bg-clip-text text-transparent">
+             Name of NFT or art
+           </span>
+         </div>
+            <div class="tabs flex-col mobile:flex-row px-[8px] py-[7px] bg-grayLight1 text-grayLightText rounded-[12px] flex
+             mt-[22px] mb-[18px] w-full max-w-[345px] xl:max-w-[416px]
+             lg:mt-[28px]
+             ">
+             <button type="button" class="tab-btn  active
+             text-[14px] leading-[20px] font-proxima font-bold
+             px-[20px] py-[14px] whitespace-nowrap rounded-[12px]
+             lg:text-[18px]
+             lg:leading-[28px]
+             lg:px-[19px]
+              
+             " data-tab="card">
+               Credit card
+             </button>
+             <button type="button" class="tab-btn  
+             text-[14px] leading-[20px] font-proxima font-bold
+             px-[35px] py-[14px] rounded-[12px]
+              lg:px-[40px]
+              lg:text-[16px]
+             " data-tab="paypal">
+               PayPal
+             </button>
+             <button type="button" class="tab-btn 
+             text-[14px] leading-[20px] font-proxima font-bold
+             px-[35px] py-[14px] rounded-[12px] pl-[32px]
+             lg:px-[40px]
+              lg:text-[16px]
+             " data-tab="crypto">
+               Crypto
+             </button>
+           </div>
+             <div class="tab-content block max-w-[345px]  xl:max-w-[410px]" data-content="card">
+               <label for="" class="font-proxima text-[14px] leading-[21px] text-grayLightText">Card number </label>
+               <input type="text" class="w-full bg-card py-[21px] pl-[32px] text-grayLightText rounded-[9px] 
+                 mt-[5px] text-[16px] leading-[21px] font-proxima
+                 " placeholder="0000 0000 0000 0000">
+               <div class="mt-[17px] mb-[13px] grid grid-cols-2 gap-4">
+                 <label class="flex flex-col gap-2">
+                   <span class="font-proxima text-[14px] leading-[21px] text-grayLightText">Date</span>
+                   <input type="text" placeholder="01/01" class="py-[21px] rounded-[9px]  bg-card pl-[32px] text-grayLightText 
+                      outline-none font-proxima text-[16px] leading-[21px]">
+                 </label>
+                 <label class="flex flex-col gap-2">
+         
+                   <span class="font-proxima text-[14px] leading-[21px] text-grayLightText">CCV</span>
+                   <input type="text" placeholder="000" class="py-[21px] rounded-[9px] bg-card pl-[32px] text-grayLightText 
+                      outline-none  font-proxima text-[16px] leading-[21px]">
+                 </label>
+               
+               
+             </div>
+             <label for="" class="font-proxima text-[14px] leading-[21px] text-grayLightText">Name on card</label>
+               <input type="text" class="w-full bg-card py-[21px] pl-[32px] text-grayLightText rounded-[9px] 
+                 mt-[7px] text-[16px] leading-[21px] font-proxima
+                 " placeholder="Ivan Ivanov">
+               <button type="button" class="bg-gradient-to-r from-blueWhite to-purpleWhite rounded-[12px] mt-[19px]
+                 w-full py-[18px] font-proxima font-bold text-[18px] leading-[26px]
                ">
-        <button type="button" class="burger__close ">
-          <svg class="w-[34px] h-[34px]">
-            <use href="#icons-close"></use>
-          </svg>
-        </button>
-    
-        <a class="text-[14px]" href="#">Main page</a>
-        <a class="flex items-center gap-2 text-[14px]" href="#">
-          <svg class="w-[18px] h-[18px]">
-            <use href="#icons-lock"></use>
-          </svg>
-          NFT
-        </a>
-    
-        <a class="tex-[14px]" href="#">Pictures</a>
-        <a class="text-[14px]" href="#">Auction</a>
-        <a class="text-[14px]" href="#">Pricing</a>
-    
-        <button type="button" class=" px-[11px] xl:px-[22px] lg:py-[12px] rounded-[12px] bg-neutral-800 text-sm   py-[14px] 
+                 Purchase
+               </button>
+           </div>
+           <div class="tab-content hidden" data-content="paypal">
             
-            ">
-              <span class=" bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
-                        bg-clip-text
-                        text-transparent
-                        text-[14px] leading-[20px]
-                               ">
-                Authorization
-              </span>
-            </button>
-        <button type="button" class=" px-[11px] xl:px-[22px] py-[14px] lg:py-[12px]    rounded-[12px] 
-               bg-gradient-to-r from-blueWhite to-purpleWhite
-              text-sm
-              text-[14px] leading-[20px] font-bold font-proxima
-              whitespace-nowrap
-       ">
-              Premium access
-            </button>
-      </div>
-    </header>
-    <section class="hiro">
-      <div class="hiro__text-bg">MAKE ART</div>
-      <div class="hiro__text-bg">NOT WAR</div>
-      <div class="hiro__shadow">
-        <div class="hiro__shadow-light"></div>
-        <div class="hiro__shadow-light"></div>
-        <div class="hiro__shadow-light"></div>
-      </div>
-      <div class="hiro__wrapper">
-        <div class="hiro__text">
-          <div class="hiro__social">
-            <svg class="hiro__social-icon">
-              <use href="#icons-inst"></use>
-            </svg>
-            <svg class="hiro__social-icon">
-              <use href="#icons-twitter"></use>
-            </svg>
-            <svg class="hiro__social-icon">
-              <use href="#icons-telegram"></use>
-            </svg>
-            <svg class="hiro__social-icon">
-              <use href="#icons-pinterest"></use>
-            </svg>
-          </div>
-          <div class="hiro__title" style="white-space: nowrap;">
-            We are here to
-            <br>
-            inspire and
-            <br>
-            share art
-          </div>
-          <div class="hiro__subtitle">Indulgence announcing uncommonly met she continuing two unpleasing terminated</div>
-          <div class="hiro__btn">
-            <button class="btn btn__premiun btn__premiun-big" type="button">
-              <svg>
-                <use href="#icons-crown-black"></use>
-              </svg>
-              <span data-i18n="premium"> Premium access </span>
-            </button>
-            <a href="#" class="btn btn__discover">
-              <span class="btn__text"> Discover </span>
-            </a>
-          </div>
-        </div>
-        <div class="hiro__star">
-          <img src="/ArtistNft/img/home/star.webp" alt="">
-        </div>
-        <div class="hiro__star">
-          <img src="/ArtistNft/img/home/star.webp" alt="">
-        </div>
-    
-        <div class="hiro__circle hiro__circle-1"></div>
-    
-        <div class="hiro__img">
-          <div class="hiro__circle hiro__circle-2"></div>
-    
-          <div class="hiro__img-cover">
-            <!-- <img src="/img/home/bg.webp" alt=""> -->
-            <picture>
-              <source srcset="./img/home/bg-mobile.webp" media="(max-width: 768px)">
-    
-              <img src="/ArtistNft/img/home/bg.webp" alt="bg">
-            </picture>
-          </div>
-          <!-- <img class="hiro__img-woman" src="/img/home/women.webp" alt=""> -->
-          <picture>
-            <source srcset="/ArtistNft/img/home/women-mobile.webp" media="(max-width: 768px)">
-    
-            <img class="hiro__img-woman" src="/ArtistNft/img/home/women.webp" alt="Woman">
-          </picture>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="about__circle about__circle-1"></div>
-      <div class="about__star">
-        <img src="/ArtistNft/img/home/star.webp" alt="">
-      </div>
-      <div class="about__wrapper">
-        <div class="about__mobile">
-          <div class="about__pretitle-mobile btn__text">BIOGRAPHY</div>
-          <div class="about__title-mobile">Perchen Arts. Biography</div>
-        </div>
-        <div class="about__img">
-          <div class="about__img-cover">
-            <picture>
-              <source srcset="./img/home/bg2-mobile.webp" media="(max-width: 768px)">
-    
-              <img src="/ArtistNft/img/home/bg2.webp" alt="bg">
-            </picture>
-          </div>
-          <picture>
-            <source srcset="/ArtistNft/img/home/women2-mobile.webp" media="(max-width: 768px)">
-    
-            <img class="about__img-woman" src="/ArtistNft/img/home/women2.webp" alt="Woman">
-          </picture>
-          <div class="about__shadow">
-            <div class="about__shadow-light"></div>
-            <div class="about__shadow-light"></div>
-            <div class="about__shadow-light"></div>
-          </div>
-        </div>
-        <div class="about__text">
-          <div class="about__pretitle btn__text">BIOGRAPHY</div>
-          <div class="about__title">Perchen Arts. Biography</div>
-          <div class="about__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.
-            <br>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            <br>
-            Turpis egestes maecenas pharetra convallis posuere morbi leo urna molestie at. Diam in arcu curcus euismod quis
-            viverra nibh cras. In ante metus dictum at tempor commodo ullamcorper. Ultrices eros in curcus turpis massa.
-          </div>
-          <div class="about__list">
-            <div class="about__item">
-              <div class="about__year">2007</div>
-              <div class="about__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+           </div>
+           <div class="tab-content hidden" data-content="crypto">
+            <div class=" font-proxima text-[14px] leading-[21px] text-grayLightText ml-[3px]">
+              To purchase item by crypto you have to send money to this wallet. After 5 minute result will sent in your mail
             </div>
-            <div class="about__item">
-              <div class="about__year">2014</div>
-              <div class="about__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-            </div>
-            <div class="about__item">
-              <div class="about__year">2019</div>
-              <div class="about__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="premium">
-      <div class="premium__wrapper">
-        <div class="premium__content">
-          <div class="premium__text">
-            <div class="premium__icon">
-              <svg>
-                <use href="#icons-crown-white"></use>
-              </svg>
-            </div>
-            <div data-i18n="getPremium" class="premium__title">Get the premium access</div>
-            <div data-i18n="premiumDescription" class="premium__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam
-            </div>
-            <div class="premium__btn">
-              <a class="btn btn__discover" href="">
-                <span class="btn__text"> Go to plans </span>
-              </a>
-            </div>
-          </div>
-          <div class="premium__cover">
-            <picture>
-              <source srcset="/ArtistNft/img/home/premium-bg-mobile.webp" media="(max-width: 768px)">
-    
-              <img class="about__img-woman" src="/ArtistNft/img/home/premium-bg.webp" alt="Woman">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="carusel">
-      <div class="carusel__wrapper"></div>
-      <div class="carusel__swiper swiper">
-        <div class="swiper-wrapper">
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel1.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel2.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel3.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel1.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel2.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel3.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel1.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel2.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carusel__slide swiper-slide">
-            <div class="carusel__type text-rgb">NFT</div>
-            <div class="carusel__img">
-              <img src="/ArtistNft/img/home/homeCarusel3.webp" alt="">
-            </div>
-            <div class="carusel__info">
-              <div class="carusel__name">Title of picture or NFT</div>
-              <div class="carusel__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor ipsum dolor
-              </div>
-              <div class="carusel__line"></div>
-              <div class="carusel__offer">
-                <div class="carusel__price">$100 322</div>
-                <div class="carusel__btn">
-                  <button type="button">Buy now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact">
-      <div class="contact__cube">
-        <img src="/ArtistNft/img/home/cube.webp" alt="cube">
-      </div>
-      <div class="contact__diamond">
-        <picture>
-          <source srcset="/ArtistNft/img/home/diamond1-mobile.webp" media="(max-width: 768px)">
-    
-          <img class="about__img-woman" src="/ArtistNft/img/home/diamond1.webp" alt="cube">
-        </picture>
-      </div>
-      <div class="contact__diamond">
-        <picture>
-          <source srcset="/ArtistNft/img/home/diamond2-mobile.webp" media="(max-width: 768px)">
-    
-          <img class="about__img-woman" src="/ArtistNft/img/home/diamond2.webp" alt="cube">
-        </picture>
-      </div>
-      <div class="contact__diamond">
-        <picture>
-          <source srcset="/ArtistNft/img/home/diamond3.webp" media="(max-width: 768px)">
-    
-          <img class="about__img-woman" src="/ArtistNft/img/home/diamond3.webp" alt="cube">
-        </picture>
-      </div>
-      <div class="contact__wrapper">
-        <div class="contact__content">
-          <div class="contact__pretitle text-rgb">CONTACT ME</div>
-          <div class="contact__title">Want to apply your work or an question appeared?</div>
-          <form class="contact__form">
-            <label class="contact__label"> Name </label>
-            <input type="text" class="contact__input" placeholder="Your name">
-            <label class="contact__label"> Mail </label>
-            <input type="mail" class="contact__input" placeholder="Your mail">
-            <label class="contact__label"> Your question </label>
-            <textarea class="contact__textarea" placeholder="Your question"></textarea>
-            <button type="submit" class="contact__submit btn btn__rgb">Send message</button>
-            <div class="contact__rule">
-              <input type="radio" class="contact__radio">
-              I agree with
-              <a href="#">Privacy Policy</a>
-              and
-              <a href="#">Terms of use</a>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+            <input type="text" class="w-full mt-[17px] bg-card py-[18px] pl-[32px] text-grayLightText rounded-[9px] 
+                 mt-[5px] text-[16px] leading-[21px] font-proxima
+                 " placeholder="0000 0000 0000 0000">
+               <label for="" class="font-proxima text-[14px] leading-[21px] text-grayLightText inline-block mt-[21px]">E-mail</label>
+               <input type="text" class="w-full bg-card py-[21px] pl-[32px] text-grayLightText rounded-[9px] 
+                 mt-[7px] text-[16px] leading-[21px] font-proxima
+                 " placeholder="Your e-mail">
+                 <button type="button" class="bg-gradient-to-r from-blueWhite to-purpleWhite rounded-[12px] mt-[19px]
+                 w-full py-[18px] font-proxima font-bold text-[18px] leading-[26px]
+               ">
+                 Check
+               </button>
+           </div>
+           <div class="policy">
+             <div class="flex items-center mt-[16px]
+               font-['Proxima_Nova']
+               text-[14px] leaing-[21px]
+               text-[rgb(200,210,220)]
+               flex-wrap">
+               <input type="radio" class="w-[20px] h-[20px]
+                           mr-[10px]
+                           border border-[rgb(82,89,96)]
+                           rounded-[7px]
+                           appearance-none
+                          cursor-pointer
+                        checked:bg-white
+                        checked:border-white
+                           ">
+               I agree with
+               <a class="mx-[9px]
+               text-[rgb(134,168,255)]
+               underline" href="#">Privacy Policy</a>
+               and
+               <a class="mx-[9px]
+               text-[rgb(134,168,255)]
+               underline" href="#">Terms of use</a>
+             </div>
+           </div>
+         </div>
+         <div>
+           <div class="card bg-card rounded-[12px] pt-[15px] pl-[20px] pr-[14px] pb-[28px] max-w-[350px]
+             lg:pr-[16px]
+             lg:mt-[18px]
+             lg:pt-[17px]
+           ">
+             <div class="name text-white font-proxima text-[16px] leading-[28px]">Name of NFT or Art placed here</div>
+             <div class="price flex justify-between mt-[19px]">
+               <div class="text ">
+                 <div class="price bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                           bg-clip-text text-transparent
+                           font-proxima font-bold text-[14px] leading-[25px] tracking-[0.1em]
+           
+                   ">
+                   PRICE
+                 </div>
+                 <div class="price text-white font-proxima font-bold text-[26px] leading-[31px]">$100 322</div>
+               </div>
+               <button type="button" class="btn rounded-[11px]  py-[6px] px-[20px] 
+                 max-h-[40px]
+                 bg-greanLight1
+                 font-proxima font-bold text-[14px]  tracking-[1.4] text-[#c5ff98]
+                 mt-[7px]
+                 ">
+                 <span class=""> BID </span>
+               </button>
+             </div>
+             <div class="line"></div>
+             <div class="text bg-[linear-gradient(130.1deg,rgb(104,200,255),rgb(209,181,255)_99%)]
+                                bg-clip-text text-transparent
+                      font-proxima font-bold  text-[14px] leading-[26px] tracking-[1.4px] mt-[33px]
+                                ">
+               DETAILED INFO
+             </div>
+             <div class="info"></div>
+             <div class="list mt-[15px]  flex lg:mt-[12px] lg:items-center">
+               <div class="item
+                         font-proxima
+                         text-[16px]
+                         leading-[24px]
+                          text-white
+                         gap-[7px]
+                         lg:flex-col
+                         lg:text-[16px]
+                         lg:leading-[28px]
+                         lg:gap-0
+                         whitespace-nowrap
+                         ">
+                 <p>36 x 27 in</p>
+                 <p class="mt-[2px]">91.4 × 68.6 cm</p>
+               </div>
+               <div class="line h-[57px] w-[1px] opacity-[0.5] bg-white  mx-[20px] ml-[21px]
+                         "></div>
+           
+               <div class="item text-white font-proxima lg:flex-col
+                           lg:w-[47%]
+                         ">
+                 <p class=" text-[16px] leading-[25px] 
+                           lg:text-[16px] lg:leading-[28px]
+                           
+                           ">
+                   This work is part of a limited edition set.
+                 </p>
+               </div>
+             </div>
+             <div class="mt-[15px] text-grayLightText font-proxima text-[14px] leading-[21px] flex flex-col gap-[21px]">
+               <p>
+                 Kindness to he horrible reserved ye. Effect twenty indeed beyond for not had county. The use him without greatly
+                 can private. Increasing it unpleasant no of contrasted no continuing. Nothing colonel my no removed in weather. It
+                 dissimilar in up devonshire inhabiting.
+               </p>
+               <p>If polite he active county in spirit an. Mrs ham intention promotion engrossed assurance defective.</p>
+             </div>
+           </div>
+      
+         </div>
+         </div>
+      </div></section>    </main>
     <!-- <footer class="footer">
       <div class="footer__wrapper footer-desck">
         <div class="footer__info">
